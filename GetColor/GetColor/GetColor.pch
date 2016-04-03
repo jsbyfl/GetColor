@@ -1,0 +1,15 @@
+//
+//  GetColor.pch
+//  GetColor
+//
+//  Created by lpc on 16/4/4.
+//  Copyright © 2016年 lpc. All rights reserved.
+//
+
+#ifndef GetColor_pch
+#define GetColor_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#endif /* GetColor_pch */

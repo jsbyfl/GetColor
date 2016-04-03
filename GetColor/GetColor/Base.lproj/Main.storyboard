@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wxG-pj-9gf" customClass="PImageView">
+                                <rect key="frame" x="20" y="20" width="280" height="257"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wxG-pj-9gf" secondAttribute="height" multiplier="280:257" id="0yI-dE-Yv1"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCX-of-PIs" userLabel="View_color">
+                                <rect key="frame" x="20" y="293" width="280" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dgz-2O-a32"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuL-ZC-HLa">
+                                <rect key="frame" x="20" y="413" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.83025670638432025" green="1" blue="0.75345886553201535" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Gl-FL-cyp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hay-mW-aRA">
+                                <rect key="frame" x="20" y="453" width="280" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.97121421629088189" blue="0.81558032548129455" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hf-7P-mDz">
+                                <rect key="frame" x="20" y="493" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.8079065721770271" green="1" blue="0.97568257650216605" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hCX-of-PIs" firstAttribute="top" secondItem="wxG-pj-9gf" secondAttribute="bottom" constant="16" id="7CD-8X-QzG"/>
+                            <constraint firstItem="MuL-ZC-HLa" firstAttribute="top" secondItem="hCX-of-PIs" secondAttribute="bottom" constant="20" id="Exc-w8-jkc"/>
+                            <constraint firstItem="wxG-pj-9gf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="HCg-du-kaw"/>
+                            <constraint firstItem="MuL-ZC-HLa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="RMX-bg-bwp"/>
+                            <constraint firstItem="hay-mW-aRA" firstAttribute="top" secondItem="MuL-ZC-HLa" secondAttribute="bottom" constant="10" id="Rm0-z8-bmh"/>
+                            <constraint firstAttribute="trailing" secondItem="MuL-ZC-HLa" secondAttribute="trailing" constant="20" id="TNl-DS-4Ug"/>
+                            <constraint firstItem="hay-mW-aRA" firstAttribute="leading" secondItem="MuL-ZC-HLa" secondAttribute="leading" id="U9E-TL-Ohs"/>
+                            <constraint firstItem="7hf-7P-mDz" firstAttribute="height" secondItem="hay-mW-aRA" secondAttribute="height" id="XMI-lF-qJb"/>
+                            <constraint firstItem="hay-mW-aRA" firstAttribute="height" secondItem="MuL-ZC-HLa" secondAttribute="height" id="cu1-oy-4Bk"/>
+                            <constraint firstAttribute="trailing" secondItem="wxG-pj-9gf" secondAttribute="trailing" constant="20" id="dcc-cv-U8E"/>
+                            <constraint firstItem="wxG-pj-9gf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="eIU-4d-k2v"/>
+                            <constraint firstAttribute="trailing" secondItem="hCX-of-PIs" secondAttribute="trailing" constant="20" id="g6J-ty-b5d"/>
+                            <constraint firstItem="hCX-of-PIs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="grs-tn-9sn"/>
+                            <constraint firstItem="7hf-7P-mDz" firstAttribute="leading" secondItem="hay-mW-aRA" secondAttribute="leading" id="rW8-SS-caW"/>
+                            <constraint firstItem="hay-mW-aRA" firstAttribute="width" secondItem="MuL-ZC-HLa" secondAttribute="width" id="s2K-aV-NKC"/>
+                            <constraint firstItem="7hf-7P-mDz" firstAttribute="top" secondItem="hay-mW-aRA" secondAttribute="bottom" constant="10" id="t6H-ei-WQo"/>
+                            <constraint firstItem="7hf-7P-mDz" firstAttribute="width" secondItem="hay-mW-aRA" secondAttribute="width" id="wpF-cr-9xR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorView" destination="hCX-of-PIs" id="vYv-02-wlm"/>
+                        <outlet property="dateLab" destination="7hf-7P-mDz" id="Na4-O4-6Kh"/>
+                        <outlet property="hexColorLab" destination="MuL-ZC-HLa" id="QKb-Yh-WDr"/>
+                        <outlet property="imgView" destination="wxG-pj-9gf" id="RxY-uU-8pi"/>
+                        <outlet property="rgbaColorLab" destination="hay-mW-aRA" id="Jvd-IL-Txh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="280"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="001.jpg" width="760" height="570"/>
+    </resources>
+</document>
